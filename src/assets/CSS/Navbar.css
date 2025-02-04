@@ -1,0 +1,115 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  .logo {
+    margin-right: auto;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 12px;
+  }
+  
+  button:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  button svg {
+    margin-right: 8px;
+  }
+  
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+  }
+  
+  .slide-menu {
+    position: fixed;
+    top: 0;
+    left: -290px;
+    width: 250px;
+    height: 100%;
+    background-color: #004c4c;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .slide-menu.open {
+    left: 0;
+  }
+  
+  .slide-menu button {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .close-menu {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+    
+    .logo {
+      margin-left: 80%;
+    }
+  
+    .nav-buttons {
+      display: none;
+    }
+  }
+
+
+  .Navbar_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .Navbar_menu li {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .Navbar_menu li svg {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  
